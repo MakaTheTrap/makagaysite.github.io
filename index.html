@@ -1,0 +1,45 @@
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+</head>
+<body>
+    <div id="navbar-layout"></div>
+    <script>
+        $.get("layout.html", function(data)
+            {
+                $("#navbar-layout").replaceWith(data);
+            });
+    </script>
+    <div id="content-body">
+        <h2>Welcome to my silly litle website UwU</h2>
+        <p>As you can see the site looks like absolute garbage right now because I am not a web developer at all.</p>
+        <p>But I will try my best to be better at it ;w;</p>
+        <div id="todo"></div>
+        <script>
+            $.get("index_children/todo.html", function(data) {
+                $("#todo").replaceWith(data);
+            });
+        </script>
+        <div id="skills"></div>
+        <script>
+            $.get("index_children/nerdstuff.html", function(data) {
+                $("#skills").replaceWith(data);
+            });
+        </script>
+        <div id="fav-books"></div>
+        <script>
+            $.get("index_children/books.html", function(data) {
+                $("#fav-books").replaceWith(data);
+            });
+        </script>
+        <div id="fav-yters"></div>
+        <script>
+            $.get("index_children/yters.html", function(data) {
+                $("#fav-yters").replaceWith(data);
+            });
+        </script>
+    </div>
+</body>

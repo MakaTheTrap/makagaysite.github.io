@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+    font-size: 13px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#banner {
+    width: 100%;
+    background-color: deepskyblue;
+}
+
+#menu {
+    position: sticky;
+}
+
+#menu li{
+    list-style-type: none; 
+    border-right: solid 1px #ccc;  
+    display: inline-block;    
+    line-height: 40px;
+    text-transform: uppercase;
+} 
+#menu li ul{
+    position: absolute;
+    z-index: 1000;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    max-width: 300px;
+    display: none;
+}
+
+#menu li ul li{
+    border-right:none;
+    width: 100%;
+    border-bottom: 1px solied #CCC;
+    text-transform: capitalize;
+}
+
+#menu li:hover ul{
+    display: block;
+}
+
+#menu li a{
+    display: block;/*Khi sử dụng thuộc tính này thì ko còn thẻ con nằm trong a*/
+    color: black;
+    text-decoration: none;
+    
+    padding: 0 20px;
+}
+#menu li a:hover{
+    color: white;
+    background-color: blue;
+}
+
+#content-body {
+    font-size: 16px;
+}

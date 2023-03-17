@@ -1,0 +1,26 @@
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+</head>
+<body>
+    <div id="navbar-layout"></div>
+    <script>
+        $.get("layout.html", function(data)
+            {
+                $("#navbar-layout").replaceWith(data);
+            });
+    </script>
+    <div id="content-body">
+        <div>
+            <h3>A lil bit about myself UWU</h3>
+            <p>I am a 21 years old boy who is currently living in Vietnam, but I do plan
+                to move to the US for my loving boyfriend~. I am currently majoring at computer science although
+                I do study things like psychology and history alongside with it. My favorite food is
+                 probably fried chickens and my favorite drink is macha milk tea. My favorite clothing are kawaii dresses and skirts, I usually prefer not wearing pants at all!
+            </p>
+        </div>
+    </div>
+</body>
