@@ -1,47 +1,39 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: cornflowerblue;
     font-size: 13px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 #banner {
     width: 100%;
-    background-color: deepskyblue;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
 }
 
 #menu {
-    position: sticky;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
 #menu li{
-    list-style-type: none; 
-    border-right: solid 1px #ccc;  
-    display: inline-block;    
-    line-height: 40px;
-    text-transform: uppercase;
+    border-right: dotted 1px white;
+    display: inline-block;
+    font-size:16px;
 } 
 #menu li ul{
     position: absolute;
     z-index: 1000;
-    background-color: #eee;
-    border: 1px solid #ddd;
-    max-width: 300px;
+    background-color: cornflowerblue;
     display: none;
+    
 }
 
 #menu li ul li{
-    border-right:none;
-    width: 100%;
-    border-bottom: 1px solied #CCC;
-    text-transform: capitalize;
+    border: 1px solid white;
+    padding: 5px;
+    display: block;
 }
 
 #menu li:hover ul{
@@ -49,7 +41,7 @@ body {
 }
 
 #menu li a{
-    display: block;/*Khi sử dụng thuộc tính này thì ko còn thẻ con nằm trong a*/
+    display: block;
     color: black;
     text-decoration: none;
     
@@ -58,8 +50,11 @@ body {
 #menu li a:hover{
     color: white;
     background-color: blue;
+    
+    
 }
 
 #content-body {
     font-size: 16px;
+    padding-top: 25px;
 }
